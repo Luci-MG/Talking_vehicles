@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "331993622003",
+    "firebase_url": "https://talkingvehicles.firebaseio.com",
+    "project_id": "talkingvehicles",
+    "storage_bucket": "talkingvehicles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331993622003:android:103ba7964fcf9195",
+        "android_client_info": {
+          "package_name": "com.iitbbs.talking_vehicles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331993622003-l9ap7vjgjg689edgskgtim98ga20rvnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iitbbs.talking_vehicles",
+            "certificate_hash": "b9a45c695088dd3e73e4d67803570cdb44ec8d0a"
+          }
+        },
+        {
+          "client_id": "331993622003-hs4c14c5bi01g8s7chl3ptul19mtm83b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Xh9-h5al_-d4sTyFPyZcxcOJkift2E8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331993622003-hs4c14c5bi01g8s7chl3ptul19mtm83b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

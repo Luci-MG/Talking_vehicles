@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sensors">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="50dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+    <TextView
+        android:id="@+id/accx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accx"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/accy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accy"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/accz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accz"
+        android:textSize="25sp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+        android:id="@+id/Gyrox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyrox"
+        android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/Gyroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyroy"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/Gyroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyroz"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/magx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="magx"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/magy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="magy"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/magz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="magz"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</FrameLayout>
