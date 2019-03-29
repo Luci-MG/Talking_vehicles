@@ -179,8 +179,11 @@ public class sensors extends Fragment implements SensorEventListener {
         setValuesmag(mMagnatemeterX,mMagnatemeterY,mMagnatemeterZ);
 
         int delta = (int) ( System.currentTimeMillis()- millis);
-        if(delta > 500 && delta<700)
+        if(delta > 500 && delta<700) {
             post(mAccelerometerX, mAccelerometerY, mAccelerometerZ);
+            postgyro(mGyroscopeX, mGyroscopeY, mGyroscopeZ);
+            postnag(mMagnatemeterX, mMagnatemeterY, mMagnatemeterZ);
+        }
         else if(delta>700)
             millis = System.currentTimeMillis();
     }
@@ -211,9 +214,20 @@ public class sensors extends Fragment implements SensorEventListener {
 
 
         mDatabase.child("sensors").child("acc").child("accx").push().setValue(x);
-        /*
         mDatabase.child("sensors").child("acc").child("accy").push().setValue(y);
-        mDatabase.child("sensors").child("acc").child("accz").push().setValue(z);*/
+        mDatabase.child("sensors").child("acc").child("accz").push().setValue(z);
+    }
+
+    public void postgyro(final float x,float y,float z){
+        mDatabase.child("sensors").child("gyr").child("gyrx").push().setValue(x);
+        mDatabase.child("sensors").child("gyr").child("gyry").push().setValue(y);
+        mDatabase.child("sensors").child("gyr").child("gyrz").push().setValue(z);
+    }
+
+    public void postnag(final float x,float y,float z){
+        mDatabase.child("sensors").child("mag").child("magx").push().setValue(x);
+        mDatabase.child("sensors").child("mag").child("magy").push().setValue(y);
+        mDatabase.child("sensors").child("mag").child("magz").push().setValue(z);
     }
 
     public void setValuesacc(float x,float y,float z){
