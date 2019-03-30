@@ -7,15 +7,16 @@
     tools:context=".sensors">
 
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="50dp">
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:layout_gravity="center_horizontal">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="5dp">
     <TextView
         android:id="@+id/accx"
         android:layout_width="wrap_content"
@@ -41,7 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="5dp"
+      >
         <TextView
         android:id="@+id/Gyrox"
         android:layout_width="wrap_content"
@@ -67,7 +69,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="5dp"
+   >
+
         <TextView
             android:id="@+id/magx"
             android:layout_width="wrap_content"
@@ -89,7 +93,79 @@
             android:text="magz"
             android:textSize="25sp"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/gotomap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyles"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:text="Get Gps"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+   <!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".map_activity">
+
+        &lt;!&ndash; <Button
+             android:id="@+id/btn_start_location_updates"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="40dp"
+             android:text="start updates" />&ndash;&gt;
+
+        <Button
+            android:id="@+id/btn_stop_location_updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="stop updates" />
+
+        <Button
+            android:id="@+id/btn_get_last_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="getlastloaction" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="Location updates will be received only when app is foreground" />
+
+        <TextView
+            android:id="@+id/location_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#333"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/updated_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="11dp" />
+
+    </LinearLayout>-->
 </LinearLayout>
+
 
 
 </FrameLayout>
