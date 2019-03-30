@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity
 
         android.app.FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-        ft.replace(R.id.fragment, new sensors());
+        ft.replace(R.id.fragment, new startbutton());
         ft.addToBackStack(null);
         ft.commit();
 
